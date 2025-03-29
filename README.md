@@ -41,18 +41,66 @@ A dark-themed, standalone Windows application for performing essential IP and su
 
 ---
 
-## 📸 Screenshot
+## 🧪 Run in Python or Build It Yourself (Optional)
 
-![IP Networking Toolkit Screenshot](./screenshot.png)
-
-> *Dark mode, clean layout, and immediate results — no clutter.*
+If you want to run or customize the source code, here’s how to do it.
 
 ---
 
-## 🧪 Build it Yourself (Optional)
+### 🔧 1. Clone the Repository
 
-If you want to modify or rebuild the app:
-
-### 1. Install Requirements
 ```bash
-pip install pyperclip
+git clone https://github.com/peckre/cno_ip_tools.git
+cd cno_ip_tools
+```
+
+---
+
+### 📦 2. Install Requirements
+
+Make sure you have Python 3.x installed. Then, install the required Python packages if not installed:
+
+```bash
+pip install pyperclip tkinter ipaddress
+```
+
+
+### 🧰 3. Run the App (for Testing or Development)
+
+```bash
+python3 ip_tool.py
+```
+
+You’ll see the dark mode GUI window appear.
+
+---
+
+### 🏗️ 4. Build a Standalone `.exe` (Windows Only)
+
+To make a distributable `.exe`:
+
+#### Install PyInstaller:
+```bash
+pip install pyinstaller
+```
+
+#### Build the app:
+```bash
+pyinstaller --onefile --windowed ip_tool_gui2.py
+```
+
+#### Output:
+- You’ll find the `.exe` in the `dist/` folder.
+- Share or run it on any Windows machine — **no Python required!**
+
+---
+
+### 📌 Build Tips
+
+- Add `--icon=myicon.ico` to the command if you want a custom icon.
+- Use `--clean` to remove old build artifacts:
+  ```bash
+  pyinstaller --onefile --windowed --clean ip_tool_gui2.py
+  ```
+
+---
