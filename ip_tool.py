@@ -149,7 +149,12 @@ style.theme_use("default")
 style.configure("TLabel", background="#2e2e2e", foreground="#ffffff")
 style.configure("TEntry", fieldbackground="#3a3a3a", foreground="#ffffff")
 style.configure("TButton", background="#3a3a3a", foreground="#ffffff")
-style.configure("TCombobox", fieldbackground="#3a3a3a", background="#3a3a3a", foreground="#ffffff")
+style.map("TCombobox",
+    fieldbackground=[("readonly", "#1e1e1e")],
+    background=[("readonly", "#1e1e1e")],
+    foreground=[("readonly", "#ffffff")]
+)
+
 
 # Tool list
 tools = [
