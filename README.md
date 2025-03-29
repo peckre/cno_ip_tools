@@ -1,6 +1,6 @@
 # 🧰 IP Networking Toolkit (Windows GUI)
 
-A dark-themed, standalone Windows application for performing essential IP and subnet calculations. Designed for simplicity, accuracy, and fast workflow — all in a clean graphical interface.
+A dark-themed, standalone Windows application for performing essential IP and subnet calculations because finding these tools across multiple sites or commands was far too much work. 
 
 ---
 
